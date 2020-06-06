@@ -11,10 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: touch new_file
-      - uses: tutu-ru-mobile/action_create_pull_request@tag1.0.0
+      - uses: tutu-ru-mobile/action_create_pull_request@tag1.0.0 #todo
         with:
           access_token: "${{ secrets.GITHUB_TOKEN }}"
           branch_from: "current_branch"
+          branch_to: "target_branch"
 ```
 
 ## Contributing

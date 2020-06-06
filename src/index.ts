@@ -16,19 +16,21 @@ async function main() {
         console.error("Action available only at pull_request")
         return
     }
-    const branch = github.context.payload.pull_request.head.ref;
+    // const prBranch = github.context.payload.pull_request.head.ref;
 
     // console.log({eventName, sha, headSha, branch, owner, repo});
     const token = core.getInput('access_token', {required: true});
     const branch_from = core.getInput('branch_from', {required: true});
+    const branch_to = core.getInput('branch_to', {required: true});
+    const title = core.getInput('title', {required: true});
     console.log(`Found token: ${token ? 'yes' : 'no'}`);
     const octokit = new github.GitHub(token);
     const newPR = await octokit.pulls.create({
+        title: title,
         head: branch_from,
-        base: branch,//todo
+        base: branch_to,
         owner: owner,
-        repo: repo,
-        title: "Record snapshots"//todo
+        repo: repo
     })
     console.log("newPR.data", newPR.data)
     console.log('Done.');
