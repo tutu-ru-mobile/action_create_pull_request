@@ -1,12 +1,18 @@
-name: 'Cancel Workflow Action'
-description: 'This Action will cancel any previous runs that are not `completed` for a given workflow.'
-author: styfle
+name: 'Create Pull Request Action'
+description: 'Create new Pull Request'
+author: avdeev-dima-tutu
 branding:
   icon: 'stop-circle'  
   color: 'white'
 inputs:
-  workflow_id:
-    description: 'A single Workflow ID or a comma separated list of IDs'
+  branch_from:
+    description: 'Branch from'
+    required: true
+  branch_to:
+    description: 'Branch to'
+    required: true
+  title:
+    description: 'title'
     required: true
   access_token:
     description: 'Your GitHub Access Token, ie: secrets.GITHUB_TOKEN'

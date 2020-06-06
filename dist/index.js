@@ -4233,10 +4233,6 @@ if (!core) {
 async function main() {
     console.log("hello TypeScript");
     const { repo: { owner, repo } } = github.context;
-    if (!github.context.payload.pull_request) {
-        console.error("Action available only at pull_request");
-        return;
-    }
     const token = core.getInput('access_token', { required: true });
     const branch_from = core.getInput('branch_from', { required: true });
     const branch_to = core.getInput('branch_to', { required: true });

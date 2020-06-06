@@ -12,10 +12,6 @@ if (!core) {
 async function main() {
     console.log("hello TypeScript")
     const {repo: {owner, repo}} = github.context;
-    if (!github.context.payload.pull_request) {
-        console.error("Action available only at pull_request")
-        return
-    }
     // const prBranch = github.context.payload.pull_request.head.ref;
 
     // console.log({eventName, sha, headSha, branch, owner, repo});
