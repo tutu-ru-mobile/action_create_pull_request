@@ -8,8 +8,8 @@
   integrity sha512-YJCEq8BE3CdN8+7HPZ/4DxJjk/OkZV2FFIf+DlZTC/4iBlzYCD5yjRR6eiOS5llO11zbRltIRuKAjMKaWTE6cg==
 
 "@actions/github@^2.1.1":
-  resolved "https://registry.yarnpkg.com/@actions/github/-/github-2.2.0.tgz#8952fe96b12b881fa39340f0e7202b04dc5c3e71"
   version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@actions/github/-/github-2.2.0.tgz#8952fe96b12b881fa39340f0e7202b04dc5c3e71"
   integrity sha512-9UAZqn8ywdR70n3GwVle4N8ALosQs4z50N7XMXrSTUVOmVpaBC5kE3TRTT7qQdi3OaQV24mjGuJZsHUmhD+ZXw==
   dependencies:
     "@actions/http-client" "^1.0.3"
@@ -252,9 +252,9 @@ nice-try@^1.0.4:
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
 node-fetch@^2.3.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
-  integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
+  integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
 
 npm-run-path@^2.0.0:
   version "2.0.2"
